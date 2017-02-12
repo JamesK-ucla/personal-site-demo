@@ -21,3 +21,180 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+
+
+
+/* Basic Styling */
+li, h1, h2, h3, p {
+	font-family: 'Open Sans';
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+
+
+/*         Mobile-First Layout         */
+
+/* Header */
+header {
+	background: lavender; 
+	height: 500px;
+}
+
+header img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+header ul {
+	align-items: center;
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	margin: 20px auto 0;
+	width: 75%;
+}
+
+header li {
+	border: black solid 2px;
+	flex: 1 auto;
+}
+
+header li a {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+header h1,
+header h3 {
+	text-align: center;
+}
+
+header h1 {
+	padding-top: 100px;
+}
+
+
+/* Quote Section */
+.quote-section {
+	background: #CCFFCC;
+	height: 150px;
+	padding-top: 60px;
+	text-align: center;
+}
+
+
+/* Main Section */
+main {
+	background: #E6CCFF;
+	display: flex;
+	flex-direction: column;
+	height: 2500px;
+}
+
+main div {
+	border: solid black 2px;
+	flex: 1 100%;
+}
+
+
+/* About Section */
+.about-section {
+	background: #CCFFFF;
+	height: 650px;
+}
+
+.about-section h2 {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.about-section img {
+	border-radius: 50%;
+	display: block;
+	margin: 30px auto 0;
+}
+
+.about-section p {
+	margin: 20px auto 0;
+	text-align: center;
+	width: 400px;
+}
+
+
+/* Contact Section */
+.contact-section {
+	background: #E6FFCC;
+	height: 200px;
+	text-align: center;
+}
+
+.contact-section h2 {
+	padding-top: 50px;
+}
+
+.contact-section a {
+	border: solid black 2px;
+	display: inline-block;
+	height: 50px;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 200px;
+}
+
+
+/* Footer Section */
+footer {
+	background: #CCE6FF;
+	height: 150px;
+}
+
+footer p {
+	padding: 60px;
+	text-align: center;
+}
+
+
+
+
+/*               Media Queries               */
+
+/*         Tablet         */
+@media only screen and (min-width: 800px) {
+	main {
+		flex-flow: row wrap;
+		height: 1500px;
+	}
+
+	main div {
+		flex: 1 50%;
+	}
+}
+
+/*         Desktop         */
+@media only screen and (min-width: 1250px) {
+	header img {
+		float: left;
+	}
+
+	header ul {
+		float: right;
+		width: 35%;
+	}
+
+	header h1 {
+		padding-top: 250px;
+	}
+
+}
